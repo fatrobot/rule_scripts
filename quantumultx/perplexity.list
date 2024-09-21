@@ -1,0 +1,11 @@
+# NAME: Perplexity
+# AUTHOR: [Your Name]
+# REPO: [Your Repository URL]
+# UPDATED: 2024-09-21 00:00:00
+# HOST: 2
+# HOST-SUFFIX: 2
+# TOTAL: 4
+HOST,www.perplexity.ai,Perplexity
+HOST,pplx.ai,Perplexity
+HOST-SUFFIX,perplexity.ai,Perplexity
+HOST-SUFFIX,pplx.ai,Perplexity
