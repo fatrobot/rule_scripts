@@ -1,0 +1,39 @@
+# Claude Rules
+# AUTHOR: Enhanced from blackmatrix7
+# UPDATED: 2025-07-18
+# TOTAL: 15+
+
+[Rule]
+# 核心 Anthropic 域名
+DOMAIN-SUFFIX,anthropic.com,Claude
+DOMAIN-SUFFIX,claude.ai,Claude
+
+# API 和认证服务
+DOMAIN-SUFFIX,api.anthropic.com,Claude
+DOMAIN-SUFFIX,a-api.anthropic.com,Claude
+DOMAIN-SUFFIX,auth.anthropic.com,Claude
+DOMAIN-SUFFIX,accounts.anthropic.com,Claude
+
+# CDN 和静态资源
+DOMAIN-SUFFIX,cdn.anthropic.com,Claude
+DOMAIN-SUFFIX,assets.anthropic.com,Claude
+DOMAIN-SUFFIX,static.anthropic.com,Claude
+
+# 分析和监控服务
+DOMAIN,cdn.usefathom.com,Claude
+DOMAIN-SUFFIX,segment.com,Claude
+DOMAIN-SUFFIX,mixpanel.com,Claude
+
+# 第三方服务
+DOMAIN-SUFFIX,googletagmanager.com,Claude
+DOMAIN-SUFFIX,google-analytics.com,Claude
+DOMAIN-SUFFIX,recaptcha.net,Claude
+DOMAIN-SUFFIX,gstatic.com,Claude
+
+# WebSocket
+DOMAIN-SUFFIX,ws.anthropic.com,Claude
+
+# 额外
+DOMAIN,claude.com,Claude
+DOMAIN,www.claude.ai,Claude
+DOMAIN,www.anthropic.com,Claude
