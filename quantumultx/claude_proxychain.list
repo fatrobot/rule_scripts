@@ -1,0 +1,29 @@
+# NAME: Claude Proxy Chain Rules
+# AUTHOR: Enhanced from blackmatrix7
+# UPDATED: 2025-07-18
+# TOTAL: 15+
+
+[filter_local]
+HOST-SUFFIX,anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,claude.ai,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,api.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,a-api.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,auth.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,accounts.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,cdn.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,assets.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,static.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,segment.com,全节点-US,via-interface=ClaudeHome
+HOST,cdn.usefathom.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,mixpanel.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,googletagmanager.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,google-analytics.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,recaptcha.net,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,gstatic.com,全节点-US,via-interface=ClaudeHome
+HOST-SUFFIX,ws.anthropic.com,全节点-US,via-interface=ClaudeHome
+HOST,claude.com,全节点-US,via-interface=ClaudeHome
+HOST,www.claude.ai,全节点-US,via-interface=ClaudeHome
+HOST,www.anthropic.com,全节点-US,via-interface=ClaudeHome
+
+# Default traffic direct
+FINAL,DIRECT
