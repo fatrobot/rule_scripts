@@ -3,7 +3,7 @@
 # UPDATED: 2025-07-18
 # TOTAL: 15+
 
-[filter_local]
+# 主要
 HOST-SUFFIX,anthropic.com,ClaudeProxy,via-interface=ClaudeHome
 HOST-SUFFIX,claude.ai,ClaudeProxy,via-interface=ClaudeHome
 HOST-SUFFIX,api.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
