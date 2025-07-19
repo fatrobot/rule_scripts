@@ -1,22 +1,10 @@
 # NAME: Claude Chain Rules
 # AUTHOR: Enhanced from blackmatrix7
 # UPDATED: 2025-07-20
-# TOTAL: 15+
 
 # 核心 Anthropic 域名
 HOST-SUFFIX,anthropic.com,claude_chain
 HOST-SUFFIX,claude.ai,claude_chain
-
-# API 和认证服务
-HOST-SUFFIX,api.anthropic.com,claude_chain
-HOST-SUFFIX,a-api.anthropic.com,claude_chain
-HOST-SUFFIX,auth.anthropic.com,claude_chain
-HOST-SUFFIX,accounts.anthropic.com,claude_chain
-
-# CDN 和静态资源
-HOST-SUFFIX,cdn.anthropic.com,claude_chain
-HOST-SUFFIX,assets.anthropic.com,claude_chain
-HOST-SUFFIX,static.anthropic.com,claude_chain
 
 # 分析和监控服务
 HOST,cdn.usefathom.com,claude_chain
@@ -29,10 +17,3 @@ HOST-SUFFIX,google-analytics.com,claude_chain
 HOST-SUFFIX,recaptcha.net,claude_chain
 HOST-SUFFIX,gstatic.com,claude_chain
 
-# WebSocket
-HOST-SUFFIX,ws.anthropic.com,claude_chain
-
-# 额外
-HOST,claude.com,claude_chain
-HOST,www.claude.ai,claude_chain
-HOST,www.anthropic.com,claude_chain
