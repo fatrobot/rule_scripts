@@ -1,39 +1,38 @@
-# NAME: Claude Proxy Chain Rules
+# NAME: Claude Chain Rules
 # AUTHOR: Enhanced from blackmatrix7
-# UPDATED: 2025-07-18
+# UPDATED: 2025-07-20
 # TOTAL: 15+
 
-# 主要
-HOST-SUFFIX,anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,claude.ai,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,api.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,a-api.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,auth.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,accounts.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,cdn.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,assets.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,static.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
+# 核心 Anthropic 域名
+HOST-SUFFIX,anthropic.com,claude_chain
+HOST-SUFFIX,claude.ai,claude_chain
+
+# API 和认证服务
+HOST-SUFFIX,api.anthropic.com,claude_chain
+HOST-SUFFIX,a-api.anthropic.com,claude_chain
+HOST-SUFFIX,auth.anthropic.com,claude_chain
+HOST-SUFFIX,accounts.anthropic.com,claude_chain
+
+# CDN 和静态资源
+HOST-SUFFIX,cdn.anthropic.com,claude_chain
+HOST-SUFFIX,assets.anthropic.com,claude_chain
+HOST-SUFFIX,static.anthropic.com,claude_chain
 
 # 分析和监控服务
-HOST,cdn.usefathom.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,segment.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,mixpanel.com,ClaudeProxy,via-interface=ClaudeHome
+HOST,cdn.usefathom.com,claude_chain
+HOST-SUFFIX,segment.com,claude_chain
+HOST-SUFFIX,mixpanel.com,claude_chain
 
-# 第三方资源
-HOST-SUFFIX,googletagmanager.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,google-analytics.com,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,recaptcha.net,ClaudeProxy,via-interface=ClaudeHome
-HOST-SUFFIX,gstatic.com,ClaudeProxy,via-interface=ClaudeHome
+# 第三方服务
+HOST-SUFFIX,googletagmanager.com,claude_chain
+HOST-SUFFIX,google-analytics.com,claude_chain
+HOST-SUFFIX,recaptcha.net,claude_chain
+HOST-SUFFIX,gstatic.com,claude_chain
 
 # WebSocket
-HOST-SUFFIX,ws.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
+HOST-SUFFIX,ws.anthropic.com,claude_chain
 
-# 其他域名
-HOST,claude.com,ClaudeProxy,via-interface=ClaudeHome
-HOST,www.claude.ai,ClaudeProxy,via-interface=ClaudeHome
-HOST,www.anthropic.com,ClaudeProxy,via-interface=ClaudeHome
-
-FINAL,DIRECT
-
-# Default traffic direct
-FINAL,DIRECT
+# 额外
+HOST,claude.com,claude_chain
+HOST,www.claude.ai,claude_chain
+HOST,www.anthropic.com,claude_chain
