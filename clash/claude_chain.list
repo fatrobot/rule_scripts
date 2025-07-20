@@ -1,0 +1,18 @@
+# NAME: Claude Chain Rules
+# AUTHOR: Enhanced from blackmatrix7
+# UPDATED: 2025-07-20
+
+# 核心 Anthropic 域名
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# 分析和监控服务
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,segment.com
+DOMAIN-SUFFIX,mixpanel.com
+
+# 第三方服务
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,gstatic.com
