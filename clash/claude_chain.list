@@ -3,16 +3,16 @@
 # UPDATED: 2025-07-20
 
 # 核心 Anthropic 域名
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,anthropic.com,Claude
+DOMAIN-SUFFIX,claude.ai,Claude
 
 # 分析和监控服务
-DOMAIN,cdn.usefathom.com
-DOMAIN-SUFFIX,segment.com
-DOMAIN-SUFFIX,mixpanel.com
+DOMAIN,cdn.usefathom.com,Claude
+DOMAIN-SUFFIX,segment.com,Claude
+DOMAIN-SUFFIX,mixpanel.com,Claude
 
 # 第三方服务
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,google-analytics.com
-DOMAIN-SUFFIX,recaptcha.net
-DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googletagmanager.com,Claude
+DOMAIN-SUFFIX,google-analytics.com,Claude
+DOMAIN-SUFFIX,recaptcha.net,Claude
+DOMAIN-SUFFIX,gstatic.com,Claude
