@@ -1,39 +1,79 @@
 # Claude Rules
-# AUTHOR: Enhanced from blackmatrix7
-# UPDATED: 2025-07-18
-# TOTAL: 15+
-
+# AUTHOR: Enhanced from blackmatrix7 / xiaolai / Claude Platform Docs
+# UPDATED: 2026-07-01
 [Rule]
-# 核心 Anthropic 域名
+
+# === Anthropic / Claude 核心 ===
 DOMAIN-SUFFIX,anthropic.com,Claude
+DOMAIN-SUFFIX,anthropic.ai,Claude
 DOMAIN-SUFFIX,claude.ai,Claude
+DOMAIN-SUFFIX,claude.com,Claude
+DOMAIN-SUFFIX,claudeusercontent.com,Claude
+DOMAIN-SUFFIX,clau.de,Claude
+DOMAIN-SUFFIX,modelcontextprotocol.io,Claude
 
-# API 和认证服务
-DOMAIN-SUFFIX,api.anthropic.com,Claude
-DOMAIN-SUFFIX,a-api.anthropic.com,Claude
-DOMAIN-SUFFIX,auth.anthropic.com,Claude
-DOMAIN-SUFFIX,accounts.anthropic.com,Claude
+# === Anthropic 官方 IP 段 (AS399358) ===
+IP-CIDR,160.79.104.0/21,Claude,no-resolve
+IP-CIDR6,2607:6bc0::/48,Claude,no-resolve
 
-# CDN 和静态资源
-DOMAIN-SUFFIX,cdn.anthropic.com,Claude
-DOMAIN-SUFFIX,assets.anthropic.com,Claude
-DOMAIN-SUFFIX,static.anthropic.com,Claude
+# === OpenAI 精确主机 ===
+DOMAIN,chat.openai.com.cdn.cloudflare.net,Claude
+DOMAIN,openai-api.arkoselabs.com,Claude
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,Claude
+DOMAIN,openaicomproductionae4b.blob.core.windows.net,Claude
+DOMAIN,production-openaicom-storage.azureedge.net,Claude
+DOMAIN,static.cloudflareinsights.com,Claude
 
-# 分析和监控服务
-DOMAIN,cdn.usefathom.com,Claude
+# === OpenAI 核心域 ===
+DOMAIN-SUFFIX,openai.com,Claude
+DOMAIN-SUFFIX,chatgpt.com,Claude
+DOMAIN-SUFFIX,sora.com,Claude
+DOMAIN-SUFFIX,crixet.com,Claude
+DOMAIN-SUFFIX,ai.com,Claude
+DOMAIN-SUFFIX,oaistatic.com,Claude
+DOMAIN-SUFFIX,oaiusercontent.com,Claude
+DOMAIN-SUFFIX,oaistatsig.com,Claude
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,Claude
+DOMAIN-SUFFIX,openaicom.imgix.net,Claude
+DOMAIN-SUFFIX,chatgpt.livekit.cloud,Claude
+DOMAIN-SUFFIX,host.livekit.cloud,Claude
+DOMAIN-SUFFIX,turn.livekit.cloud,Claude
+DOMAIN-SUFFIX,client-api.arkoselabs.com,Claude
+
+# === 共用第三方基础设施（OpenAI / Anthropic 共用）===
+DOMAIN-SUFFIX,datadoghq.com,Claude
+DOMAIN-SUFFIX,growthbook.io,Claude
+DOMAIN-SUFFIX,usefathom.com,Claude
+DOMAIN-SUFFIX,auth0.com,Claude
+DOMAIN-SUFFIX,stripe.com,Claude
+DOMAIN-SUFFIX,sentry.io,Claude
+DOMAIN-SUFFIX,intercom.io,Claude
+DOMAIN-SUFFIX,intercomcdn.com,Claude
+DOMAIN-SUFFIX,segment.io,Claude
+DOMAIN-SUFFIX,statsig.com,Claude
+DOMAIN-SUFFIX,events.statsigapi.net,Claude
+DOMAIN-SUFFIX,featuregates.org,Claude
+DOMAIN-SUFFIX,launchdarkly.com,Claude
+DOMAIN-SUFFIX,algolia.net,Claude
+DOMAIN-SUFFIX,observeit.net,Claude
+DOMAIN-SUFFIX,identrust.com,Claude
+
+# === 额外第三方 ===
 DOMAIN-SUFFIX,segment.com,Claude
 DOMAIN-SUFFIX,mixpanel.com,Claude
-
-# 第三方服务
 DOMAIN-SUFFIX,googletagmanager.com,Claude
 DOMAIN-SUFFIX,google-analytics.com,Claude
 DOMAIN-SUFFIX,recaptcha.net,Claude
 DOMAIN-SUFFIX,gstatic.com,Claude
 
-# WebSocket
-DOMAIN-SUFFIX,ws.anthropic.com,Claude
+# === Cursor ===
+DOMAIN-SUFFIX,cursor.com,Claude
+DOMAIN-SUFFIX,cursor.sh,Claude
+DOMAIN-SUFFIX,cursorapi.com,Claude
+DOMAIN-SUFFIX,cursor-cdn.com,Claude
 
-# 额外
-DOMAIN,claude.com,Claude
-DOMAIN,www.claude.ai,Claude
-DOMAIN,www.anthropic.com,Claude
+# === 可选 ===
+DOMAIN-KEYWORD,openai,Claude
+IP-CIDR,24.199.123.28/32,Claude,no-resolve
+IP-CIDR,64.23.132.171/32,Claude,no-resolve
+IP-ASN,20473,Claude,no-resolve
